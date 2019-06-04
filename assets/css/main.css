@@ -118,7 +118,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 62.5%; /*16pt*/
 		font-weight: 300;
 		line-height: 1.75;
 	}
@@ -2551,7 +2551,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -3298,6 +3298,107 @@ input, select, textarea {
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
+
+	/* ABOUT PAGE STYLES*/
+	.about {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	/* .mini-bio {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.mini-bio h1 {
+		width: 100%;
+	} */
+
+	.bio-description {
+		
+		display: flex;
+		margin-bottom: 3rem;
+			
+	}
+	
+	.bio-description p {
+		padding: 0 3rem;
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.skill-container {
+		display: flex;
+		justify-content: space-around
+	}
+
+	.front-end-skills ul, .back-end-skills ul, .other-skills ul {
+		list-style: none;	
+	}
+
+	.front-end-skills ul li>*, .back-end-skills ul li>*, .cloud-certifications ul li>* {
+		vertical-align: middle;
+	}
+
+	.back-end-skills ul li {
+		margin: 30px 0;
+	}
+
+	.back-end-skills ul li span {
+		margin-left: 30px;
+	}
+
+	.cloud-certifications ul {
+		list-style: none;	
+	}
+
+	.cloud-certifications ul li a {
+		margin-left: 30px;
+	}
+
+	/* PORTFOLIO PAGE STYLES */
+	.application-tiles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+	}
+	.tile-item {
+		border: 1px solid transparent;
+		width: 200px;
+		height: 200px;
+		margin: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 1.3rem;
+	}
+
+	.tile-item-1{
+		background: gold;		
+	}
+	.tile-item-2{
+		background: crimson;		
+	}
+	.tile-item-3{
+		background: purple;		
+	}
+	.tile-item-4{
+		background: teal;		
+	}
+	.tile-item-5{
+		background: silver;		
+	}
+	.tile-item-6{
+		background: orangered;		
+	}
+	
+
+
 
 		@media screen and (max-width: 736px) {
 
